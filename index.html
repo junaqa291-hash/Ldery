@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ldery Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+
+    .container{
+      max-width:700px;
+      padding:20px;
+    }
+
+    h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    p{
+      color:#94a3b8;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 24px;
+      background:#3b82f6;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#2563eb;
+    }
+  </style>
 </head>
 <body>
-  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
-    <input type="hidden" name="form-name" value="contact" />
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message"></textarea>
-    <input name="bot-field" />
-  </form>
+  <div class="container">
+    <h1>Ldery</h1>
+    <p>Welcome to my portfolio website.</p>
+
+    <a href="contact.html" class="btn">
+      Contact Me
+    </a>
+  </div>
 </body>
 </html>
